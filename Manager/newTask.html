@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="newTask.css">
+
+</head>
+<body>
+    <header class="login-header">
+
+        <a href="../index.html"><img src="../images/logo.png" class="header__logo" alt=""></a>
+        <nav>
+            <ul>
+                <li class="active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21V9l8-6l8 6v12h-6v-7h-4v7H4Z"/></svg>
+                    <a  href="dashboard.html">dashboard</a>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m9.25 22l-.4-3.2q-.325-.125-.613-.3t-.562-.375L4.7 19.375l-2.75-4.75l2.575-1.95Q4.5 12.5 4.5 12.337v-.674q0-.163.025-.338L1.95 9.375l2.75-4.75l2.975 1.25q.275-.2.575-.375t.6-.3l.4-3.2h5.5l.4 3.2q.325.125.613.3t.562.375l2.975-1.25l2.75 4.75l-2.575 1.95q.025.175.025.338v.674q0 .163-.05.338l2.575 1.95l-2.75 4.75l-2.95-1.25q-.275.2-.575.375t-.6.3l-.4 3.2h-5.5Zm2.8-6.5q1.45 0 2.475-1.025T15.55 12q0-1.45-1.025-2.475T12.05 8.5q-1.475 0-2.488 1.025T8.55 12q0 1.45 1.012 2.475T12.05 15.5Zm0-2q-.625 0-1.063-.438T10.55 12q0-.625.438-1.063t1.062-.437q.625 0 1.063.438T13.55 12q0 .625-.438 1.063t-1.062.437ZM12 12Zm-1 8h1.975l.35-2.65q.775-.2 1.438-.588t1.212-.937l2.475 1.025l.975-1.7l-2.15-1.625q.125-.35.175-.737T17.5 12q0-.4-.05-.787t-.175-.738l2.15-1.625l-.975-1.7l-2.475 1.05q-.55-.575-1.212-.962t-1.438-.588L13 4h-1.975l-.35 2.65q-.775.2-1.437.588t-1.213.937L5.55 7.15l-.975 1.7l2.15 1.6q-.125.375-.175.75t-.05.8q0 .4.05.775t.175.75l-2.15 1.625l.975 1.7l2.475-1.05q.55.575 1.213.963t1.437.587L11 20Z"/></svg>
+                    <a href="#">Settings</a>
+                </li>
+                
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 12a1 1 0 0 0 1 1h7.59l-2.3 2.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76a1 1 0 0 0-.21-.33l-4-4a1 1 0 1 0-1.42 1.42l2.3 2.29H5a1 1 0 0 0-1 1ZM17 2H7a3 3 0 0 0-3 3v3a1 1 0 0 0 2 0V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-3a1 1 0 0 0-2 0v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Z"/></svg>
+                    <a href="../index.html">Sign out</a>
+                </li>
+            </ul>
+        </nav>
+    </header>   
+
+    <main class="newtask-main">
+        <h2 class="newtask__heading">NEW TASK</h2>
+        <div class="newtask__container">
+            <div class="newtask__subtask">
+                <div class="newtask-heading">Subtask</div>
+            </div>
+
+            <div class="courses-table">
+                <div class="courses-tables__rw1">
+                    <div class="objectives">Course objectives</div>
+                    <div class="topic">topic</div>
+                    <div class="outcomes">outcomes</div>
+                    <div class="questions-number">no. questions</div>
+                    <div class="difficulty">difficulty</div>
+                    <div class="category">category</div>
+                </div>
+
+                <div class="courses-tables__rw2">
+                    <div>Objective 1 <br> Objective 2 <br> Objective 3</div>
+                    <div>Javascript</div>
+                    <div>outcome 1 <br> outcome 2 <br> outcome 3</div>
+                    <div>3</div>
+                    <div>Hard</div>
+                    <div>Web dev,<br> front end</div>
+                </div>
+
+            </div>
+
+            <div class="newtask__available">No Tasks</div>
+            <a class="add-subtask-btn2" href="#">ADD subtask</a>
+        </div>
+
+        <div class="auther-assigning-container">
+            <div class="auther-assigning__heading">
+                Auther assigning
+            </div>
+            
+            <form class="auther-assigning__form" action="#">
+                <label for="auther-assigning__authors">Assign to</label>
+                <select id="auther-assigning__authors" name="auther-assigning__authors">
+                    <option disabled selected>Choose</option>
+                  <option value="dr.mohammed ahmed">dr.mohammed ahmed</option>
+                  <option value="dr.amal bokhari">dr.amal bokhari</option>
+                </select>
+              </form>
+
+
+        </div>
+
+        <div class="auther-assigning__btns">
+            <a href="dashboard.html" class="auther-assigning__btn cancel">Cancel</a>
+            <a href="#" class="auther-assigning__btn submit-task">Submit Task</a>
+
+        </div>
+
+        
+    </main>
+
+    <div class="task-modal">
+
+        <div class="modal__objectives">
+            <div class="modal__objectives-heading">Course Objectives</div>
+            <div class="modal__objectives-input-container">
+                <div class="modal__objectives-inputdiv">
+                    <input type="checkbox"> Objective 1
+                </div>
+                <div class="modal__objectives-inputdiv">
+                    <input type="checkbox"> Objective 2
+                </div>
+
+                <div class="modal__objectives-inputdiv">
+                    <input type="checkbox"> Objective 3
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__topics-outcomes">
+            <div class="modal__topics-heading">Topic & Outcomes</div>
+            
+            <form class="modal__topics__form" action="#">
+                <label for="modal__topics-topic">Topic</label>
+                <select id="modal__topics-topic" name="modal__topics-topic">
+                    <option disabled selected>Choose</option>
+                  <option value="topic1">Topic 1</option>
+                  <option value="topic2">Topic 2</option>
+                </select>
+              </form>
+
+        </div>
+
+        <div class="modal__questions">
+            <div class="modal__questions-heading">The Questions</div>
+            
+            <form class="modal__questions__form" action="#">
+                
+                <div class="modal__questions-container">
+                    <label for="modal__questions-no">No. Questions</label>
+                    <input id="modal__questions-no" name="modal__questions-no" type="number"></input>
+                 </div>
+
+                 <div class="modal__questions-container">
+                    <label for="modal__questions-difficulty">Questions difficulty</label>
+                    <select id="modal__questions-difficulty" name="modal__questions-difficulty">
+                        <option disabled selected>Choose</option>
+                    <option value="easy">easy</option>
+                    <option value="medium">medium</option>
+                    <option value="hard">hard</option>
+                    </select>
+                </div>
+              </form>
+        </div>
+        <div class="modal__category">
+            
+            <div class="modal__category-heading">Category</div>
+            <div class="modal__category-input-container">
+                <div class="modal__category-inputdiv">
+                    <input type="checkbox"> Category 1
+                </div>
+                <div class="mmodal__category-inputdiv">
+                    <input type="checkbox"> Category 2
+                </div>
+
+                <div class="modal__category-inputdiv">
+                    <input type="checkbox"> Category 3
+                </div>
+            </div>
+
+        </div>
+        <div class="auther-assigning__btns">
+            <a href="newTask.html" class="auther-assigning__btn cancel">Cancel</a>
+            <a href="newTask.html" class="auther-assigning__btn submit-task">Submit Task</a>
+        </div>
+    </div>
+
+    <script src="newTask.js" ></script>
+</body>
+</html>

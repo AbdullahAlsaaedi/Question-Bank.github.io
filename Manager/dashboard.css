@@ -1,0 +1,313 @@
+.login-header {
+    margin-bottom: 2rem;
+    background: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 3rem;
+}
+
+
+.login-header nav {
+    margin-right: auto;
+    margin-left: 2rem;
+
+    @media screen and (max-width: 500px) {
+        margin: 0;
+    }
+}
+.login-header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    @media screen and (max-width: 500px) {
+        gap: 0.7rem;
+    }
+}
+
+
+.login-header li {
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    border-right: solid 1px white;
+    color: rgba(46, 17, 17, 0.75);
+}
+
+.login-header li:last-child {
+    border-right: solid 0px;
+}
+
+.login-header a {
+    text-decoration: none;
+    color: currentColor;
+    font-size: 1.4rem;
+
+    @media screen and (max-width: 500px) {
+        font-size: 1.2rem;
+    }
+}
+
+.login-header li:hover {
+    color: rgb(75, 18, 18);
+}
+
+
+.login-header svg {
+    height: 1.7rem;
+    margin-right: 0.3rem;
+
+    @media screen and (max-width: 500px) {
+        /* height: 1.2rem; */
+        /* margin-left: 0; */
+    }
+}
+
+li.active {
+    color: rgb(56, 27, 27);
+}
+
+
+
+
+
+/* MAIN ///////////// */ 
+
+
+.dashboard-main {
+    /* display: grid; */
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 4fr;
+    gap: 4rem;
+    padding: 0rem 5rem;
+
+    @media screen and (max-width: 1140px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0rem 3rem;
+    }
+}
+
+.auther {
+    /* padding: 2rem; */
+    background-color: white;
+    border-radius: 1rem;
+    border: 0.5px solid rgb(206, 206, 206);
+    padding-bottom: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.auther__info {
+    border-bottom: 0.5px solid rgb(206, 206, 206);
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.auther__info svg{
+    height: 5rem;
+}
+
+.auther__name {
+    font-size: 2.2rem;
+    color: #dc3545;
+}
+
+.auther__speciality {
+    color: gray;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.auther__row {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom:  0.5px solid rgb(206, 206, 206);
+    font-size: 1.2rem;
+    
+}
+
+.auther__row a {
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 10rem;
+    border-radius: 20px;
+    border: solid 1px aqua;
+    /* border: none; */
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    
+}
+
+.auther__row a:hover {
+    background-color: #adb8fb;
+    color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* padding: 0.5rem 1.4rem; */
+    width: 10.4rem;
+}
+.title {
+    color: #dc3545;
+    margin-right: 5px;
+}
+
+.tasks {
+    /* grid-area: tasks; */
+    /* width: 100%; */
+}
+
+.tasks__heading {
+    font-size: 2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+ 
+    @media screen and (max-width: 900px) {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+.tasks__task {
+    display: flex;
+    align-items: center;
+    border: solid 1px rgb(204, 204, 204);
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* width: 100%; */
+
+    @media screen and (max-width: 900px) {
+        font-size: 1.5rem;
+        margin-left: 0;
+        font-size: 0.8rem;
+    }
+
+}
+
+.tasks__task > p {
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border-right: solid 0.5px rgb(227, 43, 43);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    @media screen and (max-width: 900px) {
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 640px) {
+        padding: 0.5rem;
+    }
+}
+
+
+p.hours {
+    font-size: 1.4rem;
+    /* padding: 1.5rem; */
+    width: 18rem;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+
+    @media screen and (max-width: 900px) {
+        width: 15rem;
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 640px) {
+        width: 10rem;
+        font-size: 1rem;
+        
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 0.8rem;
+        width: 9rem;
+    }
+}
+
+
+
+p.status {
+    margin-right: auto;
+    padding-right: 7rem; 
+
+    @media screen and (max-width: 900px) {
+        padding-right: 2rem;
+        font-size: 0.8rem;
+    }
+
+    
+}
+
+.hours__logo {
+    height: 2rem;
+    margin-right: 1rem;
+    /* display: inline-block; */
+
+    @media screen and (max-width: 640px) {
+        height: 1.5rem;
+        margin-right: 0.7rem;
+        
+    }
+}
+
+.tasks__btn {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 2px;
+    background-color: #138496;
+    color: white;
+    cursor: pointer;
+
+    @media screen and (max-width: 640px) {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        /* margin-right: 1rem; */
+    }
+}
+
+
+
+.history {
+    background-color: #5a6268;
+    margin-left: 1rem;
+    margin-right: 3rem;
+
+    @media screen and (max-width: 450px) {
+        margin-right: 1rem;
+        margin-left: 0.5rem;
+    }
+}
+
+
+.tasks__task p span {
+    font-size: 1.5rem;
+
+    @media screen and (max-width: 900px) {
+        padding-right: 0rem;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding-right: 0.5rem;
+        font-size: 0.8rem;
+    }
+}

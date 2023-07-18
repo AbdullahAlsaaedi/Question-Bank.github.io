@@ -1,0 +1,157 @@
+body {
+    display: block;
+}
+
+
+
+
+.login-header {
+    margin-bottom: 2rem;
+    background: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 3rem;
+}
+
+.login-header nav {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+.login-header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+
+.login-header li {
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    border-right: solid 1px white;
+    color: rgba(46, 17, 17, 0.75);
+}
+
+.login-header li:last-child {
+    border-right: solid 0px;
+}
+
+.login-header a {
+    text-decoration: none;
+    color: currentColor;
+    font-size: 1.4rem;
+
+    
+}
+
+.login-header li:hover {
+    color: rgb(75, 18, 18);
+}
+
+
+.login-header svg {
+    height: 1.7rem;
+    margin-right: 0.3rem;
+}
+
+li.active {
+    color: rgb(56, 27, 27);
+}
+
+
+.dashboard-main {
+    margin: 4rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+.overview {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    gap: 4rem;
+
+    @media screen and (max-width: 550px) {
+        display: block;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        gap: 0;
+    }
+
+                
+
+}
+
+.overview > * {
+    font-size: 1.3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: rgba(99, 99, 99, 0.207) 0px 2px 8px 0px;
+
+    @media screen and (max-width: 550px) {
+        margin-bottom: 2rem;
+    }
+
+}
+
+p {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.5px solid rgb(217, 217, 217);
+    padding-bottom: 1rem;
+}
+
+
+.newtasks {
+    box-shadow: rgba(99, 99, 99, 0.207) 0px 2px 8px 0px;
+
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(213, 29, 29);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.207) 0px 2px 8px 0px;
+
+}
+
+.questions-no {
+    color: blueviolet;
+    font-size: 1.7rem;
+    margin: 0.3rem;
+    margin-bottom: 1rem;
+
+}
+
+.section-diff {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    padding-bottom: 0.5rem;
+    /* padding: 0 1rem; */
+}
+
+.section {
+
+}
+
+.difficulty {
+    margin-right: 2rem;
+}
+
+.hours {
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
